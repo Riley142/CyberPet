@@ -13,6 +13,7 @@ class Pet {
             play.innerText = `${this.petName}, is happy!`;
         this.funLvl++;    
     }
+    
     feed() {
         if (this.hungerLvl === 0) {
             feed.innerText = `Your ${this.petName}, is hungry! ${this.petName} needs to eat!`;
@@ -20,6 +21,7 @@ class Pet {
             feed.innerText = `Your ${this.petName}, is full!`;
         this.hungerLvl++;
     }
+
     drink() {
         if (this.thirstLvl === 0) {
             drink.innerText = `Your ${this.petName}, is thirsty! ${this.petName} needs to drink!`;

@@ -6,33 +6,48 @@ const displayDiv1 = document.querySelector(".funcs1")
 const displayDiv2 = document.querySelector(".funcs2")
 const displayDiv3 = document.querySelector(".funcs3")
 
+const barsCat = document.querySelector(".barsCat")
+const barsDog = document.querySelector(".barsDog")
+const barsRabbit = document.querySelector(".barsRabbit")
+
 const play = document.querySelector("#play")
 const feed = document.querySelector("#feed")
 const drink = document.querySelector("#drink")
 
+const start = document.querySelector("#start")
+
 let pet;
 
+start.addEventListener("click", (evt) => {
+    window.location.reload();
+});
+
 petCat.addEventListener("click", (evt) => {
+    barsCat.style.display = "flex";
     petDog.style.display = "none";
     petRabbit.style.display = "none";
-    displayDiv1.style.display = "block";
+    displayDiv1.style.display = "flex";
     pet = new Pet("Cat");
     attachEvtL();
 });
 
 petDog.addEventListener("click", (evt) => {
+    barsDog.style.display = "flex";
     petCat.style.display = "none";
     petRabbit.style.display = "none";
-    displayDiv2.style.display = "block";
+    displayDiv2.style.display = "flex";
     pet = new Pet("Dog");
+
     attachEvtL();
 });
 
 petRabbit.addEventListener("click", (evt) => {
+    barsRabbit.style.display = "flex";
     petDog.style.display = "none";
     petCat.style.display = "none";
-    displayDiv3.style.display = "block";
+    displayDiv3.style.display = "flex";
     pet = new Pet("Rabbit");
+    
     attachEvtL();
 });
 

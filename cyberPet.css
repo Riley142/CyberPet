@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
 
 body {
-    background-color: #a583e4;
+    background-color: #864ef5;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     color: #fff;
@@ -16,6 +16,11 @@ h2 {
     font-weight: 400;
 }
 .pets {
+    border: #fff 5px solid;
+    border-radius: 25px;
+    background-color: #454ea0;
+    width: 1000px;
+    margin:auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,23 +34,87 @@ h2 {
     cursor: pointer;
     width:250px;
     border-radius: 50%;
-    border: 2px dashed #fff;
+    border: 2px solid #fff;
 }
 
-.pets img:hover {
+.pets img:hover, button:hover {
     transform: scale(1.15);
+    background-color: #454ea0;
+}
+
+#funcs {
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .funcs1, .funcs2, .funcs3 {
     display: none;
 }
 
-p {
-    font-size: 1.5rem;
+#funcs p {
+    font-size: 1.2rem;
     letter-spacing: 2px;
+    padding: 0 2rem;
 }
 
-p:hover {
-    color: #67479e;
+#funcs p:hover {
+    color: #01b7cc;
     cursor: pointer;
+}
+
+button {
+    margin-top: 1rem;
+    border-radius: 20px;
+    padding: 0.35rem 1rem;
+    border: 2px solid #fff;
+    background-color: #01b7cc;
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+#bars {
+    width: 850px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2c8e6;
+    border-radius: 20px;
+    padding:  2 2rem;
+    color: #67479e;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#progressBar {
+    background-color: #f51212;
+    width: 200px;
+    height:1.75rem;
+    margin:1.5rem;    
+    background: none;
+    border: 3px solid #67479e;
+    border-radius: 20px;
+}
+
+.progressWidthPlay {
+    background-color:#F5B55E;
+    height:1.75rem;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.progressWidthHunger {
+    background-color:#3ac03a;
+    height:1.75rem;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.progressWidthThirst {
+    background-color:#01b7cc;
+    height:1.75rem;
+    width: 50%;
+    border-radius: 20px;
 }

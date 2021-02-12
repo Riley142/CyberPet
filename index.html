@@ -8,16 +8,42 @@
     <title>Cyber Pet</title>
 </head>
 <body>
-    <h1>Pick Your pet:</h1>
+    <h1 id="header">Pick Your pet:</h1>
+    
     <div class="pets">
 
         <div class="cat" id="cat">
             <h2>Cat</h2>
             <img src="img/cat.jpg" alt="cat">
-            <div id="funcsh" class="funcs1">
+            <div id="funcs" class="funcs1">
                 <p id="play">Play with me!</p>
                 <p id="feed">Give me some food!</p>
                 <p id="drink">Give me some water!</p>
+            </div>
+
+            <div id="bars" class="barsCat">
+
+                <div id="playBar">
+                    <p>Happines level</p>
+                    <div id="progressBar">
+                        <div class="progressWidthPlay"></div>
+                    </div>
+                </div>
+
+                <div id="hungerBar">
+                    <p>Hunger Level</p>
+                    <div id="progressBar">
+                        <div class="progressWidthHunger"></div>
+                    </div>
+                </div>
+
+                <div id="thirstBar">
+                    <p>Thirst Level</p>
+                    <div id="progressBar">
+                        <div class="progressWidthThirst"></div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
 
@@ -29,6 +55,30 @@
                 <p id="feed">Give me some food!</p>
                 <p id="drink">Give me some water!</p>
             </div>
+            <div id="bars" class="barsDog">
+
+                 <div id="playBar">
+                    <p>Happines level</p>
+                    <div id="progressBar">
+                        <div class="progressWidthPlay"></div>
+                    </div>
+                </div>
+
+                <div id="hungerBar">
+                    <p>Hunger Level</p>
+                    <div id="progressBar">
+                        <div class="progressWidthHunger"></div>
+                    </div>
+                </div>
+
+                <div id="thirstBar">
+                    <p>Thirst Level</p>
+                    <div id="progressBar">
+                        <div class="progressWidthThirst"></div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
         <div class="rabbit" id="rabbit">
@@ -39,8 +89,35 @@
                 <p id="feed">Give me some food!</p>
                 <p id="drink">Give me some water!</p>
             </div>
+            <div id="bars" class="barsRabbit">
+
+                <div id="playBar">
+                   <p>Happines level</p>
+                   <div id="progressBar">
+                       <div class="progressWidthPlay"></div>
+                   </div>
+               </div>
+
+               <div id="hungerBar">
+                   <p>Hunger Level</p>
+                   <div id="progressBar">
+                       <div class="progressWidthHunger"></div>
+                   </div>
+               </div>
+
+               <div id="thirstBar">
+                   <p>Thirst Level</p>
+                   <div id="progressBar">
+                       <div class="progressWidthThirst"></div>
+                   </div>
+               </div>
+
+           </div>
         </div>
     </div>
+
+    <button id="start">Start again!</button>
+
     <script src="cyberPet.js"></script>
     <script src="cyberPet2.js"></script>
 </body>
